@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Classes, SysUtils, CustApp,
+  Classes, SysUtils, CustApp, LazFileUtils, StrUtils,
   CodeToolManager, CustomCodeTool, CodeCache, CodeTree
   { you can add units after this };
 
@@ -27,11 +27,21 @@ type
 
 
 var
+  UnitNames: TStringList;
   UsesIntf: TStringList;
   UsesImpl: TStringList;
   OutIntf: TStringList;
   OutImpl: TStringList;
   OutUnit: TStringList;
+
+procedure FilterUsesSection( UsesSect: TStringList );
+var
+  n, i: Integer;
+begin
+  for i:= UsesSect.Count - 1 downto 0 do
+    if ( UnitNames.Find( UsesSect[ i ], n )) then
+      UsesSect.Delete( i );
+end;
 
 procedure ParseUnit( AFilename: String );
 var
@@ -39,30 +49,54 @@ var
   _UsesIntf: TStrings = nil;
   _UsesImpl: TStrings = nil;
   AUnit: TCodeBuffer;
-  Intf, UsesSectIntf: TCodeTreeNode;
+  StartNode: TCodeTreeNode;
   CodeStart, CodeEnd: TCodePosition;
+  UnitName: String;
+
+  procedure AddCodeSection( OutList: TStringList; StartNode: TCodeTreeNode );
+  var
+    UsesSect: TCodeTreeNode;
+    SrcCode: String;
+  begin
+    UsesSect:= Tool.FindUsesNode( StartNode );
+    if ( Assigned( UsesSect )) then
+      Tool.CleanPosToCodePos( UsesSect.EndPos, CodeStart )
+    else
+      Tool.CleanPosToCodePos( StartNode.Next.StartPos, CodeStart );
+
+    Tool.CleanPosToCodePos( StartNode.EndPos, CodeEnd );
+    SrcCode:= Copy( AUnit.Source, CodeStart.P, CodeEnd.P - CodeStart.P );
+    RemoveLeadingchars( SrcCode, [ ' ', LineEnding ]);
+    RemoveTrailingChars( SrcCode, [ ' ', LineEnding ]);
+    OutList.Add(
+      '// ' + UnitName + ' -->' + LineEnding +
+      SrcCode + LineEnding +
+      '// <--' + UnitName + LineEnding
+    );
+  end;
+
 begin
   try
     AUnit:= CodeToolBoss.LoadFile( ExpandFileName( AFilename ), False, False );
+    if ( not FileExistsUTF8( AFilename )) then
+      raise Exception.Create( 'The code of the unit file could not be parsed because the file does not exist: ' + AFilename );
+
     if ( not CodeToolBoss.Explore( AUnit, Tool, False, False )) then
       raise Exception.Create( 'The code of the unit file could not be parsed as it contains errors: ' + AUnit.Filename );
+
+    UnitName:= ExtractFileNameOnly( AFilename );
+    UnitNames.Add( UnitName );
 
     // Uses Sections
     Tool.FindUsedUnitNames( _UsesIntf, _UsesImpl );
 
     // Interface Section
-    Intf:= Tool.FindInterfaceNode;
-    UsesSectIntf:= Tool.FindUsesNode( Intf );
-    Tool.CleanPosToCodePos( UsesSectIntf.EndPos, CodeStart );
-    Tool.CleanPosToCodePos( Intf.EndPos, CodeEnd );
-    OutIntf.Add( Copy( AUnit.Source, CodeStart.P, CodeEnd.P - CodeStart.P ));
+    StartNode:= Tool.FindInterfaceNode;
+    AddCodeSection( OutIntf, StartNode );
 
     // Implementation Section
-    Intf:= Tool.FindImplementationNode;
-    UsesSectIntf:= Tool.FindUsesNode( Intf );
-    Tool.CleanPosToCodePos( UsesSectIntf.EndPos, CodeStart );
-    Tool.CleanPosToCodePos( Intf.EndPos, CodeEnd );
-    OutImpl.Add( Copy( AUnit.Source, CodeStart.P, CodeEnd.P - CodeStart.P ));
+    StartNode:= Tool.FindImplementationNode;
+    AddCodeSection( OutImpl, StartNode );
 
     UsesIntf.AddStrings( _UsesIntf );
     UsesImpl.AddStrings( _UsesImpl );
@@ -72,11 +106,46 @@ begin
   end;
 end;
 
+procedure GenOutFile( FName: String );
+  function AddUsesSection( Sect: TStringList ): String;
+  var
+    i: Integer;
+  begin
+    if ( Sect.Count > 0 ) then begin
+      Result:= 'uses' + LineEnding;
+
+      i:= 0;
+      while i < Sect.Count - 1 do begin
+        Result += '  ' + Sect[ i ] + ',' + LineEnding;
+        Inc( i );
+      end;
+      Result += '  ' + Sect[ Sect.Count - 1 ] + ';' + LineEnding + LineEnding;
+    end;
+  end;
+
+begin
+  OutUnit.Text:= 'unit ' + ExtractFileNameOnly( FName ) + ';' + LineEnding + LineEnding;
+  OutUnit.Add(
+    'interface' + LineEnding +
+    LineEnding +
+    AddUsesSection( UsesIntf ) +
+    OutIntf.Text +
+    'implementation' + LineEnding +
+    LineEnding +
+    AddUsesSection( UsesImpl ) +
+    OutImpl.Text +
+    'end.'
+  );
+
+end;
+
 procedure TPasUnitMerge.DoRun;
 var
   ErrorMsg: String;
   i: Integer;
 begin
+  UnitNames:= TStringList.Create;
+  UnitNames.Sorted:= True;
   UsesImpl:= TStringList.Create;
   UsesIntf:= TStringList.Create;
   UsesIntf.Sorted:= True;
@@ -107,9 +176,11 @@ begin
     if ( Params[ i ] = '-o' ) then begin
       WriteLn( 'Outfile: ', Params[ i + 1 ]);
 
-      OutUnit:= 'unit ' + ExtractFileNameOnly( Params[ i + 1 ]) + ';';
-      WriteLn( 'OutUnit: ');
-      WriteLn( OutUnit.Text );
+      FilterUsesSection( UsesIntf );
+      FilterUsesSection( UsesImpl );
+      GenOutFile( Params[ i + 1 ]);
+
+      OutUnit.SaveToFile( Params[ i + 1 ]);
 
       Inc( i );
     end else
@@ -122,6 +193,7 @@ begin
 
 
   // stop program loop
+  FreeAndNil( UnitNames );
   FreeAndNil( UsesImpl );
   FreeAndNil( UsesIntf );
   FreeAndNil( OutUnit );
