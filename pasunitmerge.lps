@@ -8,206 +8,211 @@
         <Filename Value="pasunitmerge.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="41"/>
-        <CursorPos X="45" Y="65"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="184"/>
+        <CursorPos X="22" Y="198"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../makedoc/p3dmakedoc.lpr"/>
-        <EditorIndex Value="13"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="7"/>
         <CursorPos X="36" Y="22"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../makedoc/p3dparsepascal.pas"/>
-        <EditorIndex Value="14"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="491"/>
         <CursorPos X="27" Y="506"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/fpcsrc/packages/fcl-base/src/custapp.pp"/>
         <UnitName Value="CustApp"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="67"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/stdcodetools.pas"/>
         <UnitName Value="StdCodeTools"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="125"/>
         <CursorPos X="31" Y="139"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/codetoolmanager.pas"/>
         <UnitName Value="CodeToolManager"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="229"/>
         <CursorPos X="14" Y="248"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/codecache.pas"/>
         <UnitName Value="CodeCache"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="207"/>
         <CursorPos X="3" Y="227"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/pascalparsertool.pas"/>
         <UnitName Value="PascalParserTool"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="619"/>
         <CursorPos Y="641"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/fpcsrc/rtl/objpas/classes/classesh.inc"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="757"/>
         <CursorPos X="14" Y="774"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/fpcsrc/rtl/objpas/classes/stringl.inc"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="1870"/>
         <CursorPos X="3" Y="1873"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/customcodetool.pas"/>
         <UnitName Value="CustomCodeTool"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="229"/>
         <CursorPos X="14" Y="188"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/codetree.pas"/>
         <UnitName Value="CodeTree"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="446"/>
         <CursorPos X="15" Y="292"/>
         <UsageCount Value="10"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/pascalparsertool.pas"/>
-        <UnitName Value="PascalParserTool"/>
-        <EditorIndex Value="11"/>
-        <TopLine Value="119"/>
-        <CursorPos X="42" Y="126"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/multikeywordlisttool.pas"/>
-        <UnitName Value="MultiKeyWordListTool"/>
-        <EditorIndex Value="10"/>
-        <TopLine Value="35"/>
-        <CursorPos X="3" Y="45"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/customcodetool.pas"/>
-        <UnitName Value="CustomCodeTool"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="316"/>
-        <CursorPos X="3" Y="107"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/codetoolmanager.pas"/>
-        <UnitName Value="CodeToolManager"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="40"/>
-        <CursorPos X="3" Y="59"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/eventcodetool.pas"/>
-        <UnitName Value="EventCodeTool"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="47"/>
-        <CursorPos X="3" Y="57"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/changedeclarationtool.pas"/>
-        <UnitName Value="ChangeDeclarationTool"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="51"/>
-        <CursorPos X="3" Y="70"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/extractproctool.pas"/>
-        <UnitName Value="ExtractProcTool"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="76"/>
-        <CursorPos X="3" Y="95"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/codecompletiontool.pas"/>
-        <UnitName Value="CodeCompletionTool"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="142"/>
-        <CursorPos X="3" Y="149"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/methodjumptool.pas"/>
-        <UnitName Value="MethodJumpTool"/>
-        <EditorIndex Value="9"/>
-        <TopLine Value="36"/>
-        <CursorPos X="3" Y="55"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/stdcodetools.pas"/>
-        <UnitName Value="StdCodeTools"/>
-        <EditorIndex Value="12"/>
-        <TopLine Value="57"/>
-        <CursorPos X="41" Y="85"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/identcompletiontool.pas"/>
-        <UnitName Value="IdentCompletionTool"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="373"/>
-        <CursorPos X="39" Y="389"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/finddeclarationtool.pas"/>
-        <UnitName Value="FindDeclarationTool"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="872"/>
-        <CursorPos X="3" Y="708"/>
-        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="58" Column="23" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="../makedoc/p3dparsepascal.pas"/>
+        <Caret Line="35" Column="33" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="43" Column="52" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="44" Column="16" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="33" Column="29" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/codetoolmanager.pas"/>
+        <Caret Line="248" Column="14" TopLine="229"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="74" Column="86" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="38" Column="61" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/pascalparsertool.pas"/>
+        <Caret Line="641" TopLine="619"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/stdcodetools.pas"/>
+        <Caret Line="1380" TopLine="1358"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../fpcupdeluxe/lazarus/components/codetools/pascalparsertool.pas"/>
+        <Caret Line="641" TopLine="619"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="38" Column="39" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="39" Column="117" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="48" Column="29" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="46" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="36" Column="29" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="41" Column="105" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="40" Column="5" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="88" Column="19" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../fpcupdeluxe/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <Caret Line="774" Column="14" TopLine="756"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="63" Column="17" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="45" Column="23" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="50" Column="5" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="51" Column="27" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="54" Column="15" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="pasunitmerge.pas"/>
+        <Caret Line="55" Column="46" TopLine="30"/>
+      </Position>
       <Position>
         <Filename Value="pasunitmerge.pas"/>
         <Caret Line="48" Column="49" TopLine="30"/>
@@ -218,115 +223,7 @@
       </Position>
       <Position>
         <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="64" Column="44" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="9" Column="43" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="96" Column="12" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="136" Column="34" TopLine="121"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="140" Column="7" TopLine="116"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="51" Column="9" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/pascalparsertool.pas"/>
-        <Caret Line="126" Column="42" TopLine="119"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/multikeywordlisttool.pas"/>
-        <Caret Line="45" Column="3" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="51" Column="9" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/codetoolmanager.pas"/>
-        <Caret Line="59" Column="3" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/eventcodetool.pas"/>
-        <Caret Line="57" Column="3" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/changedeclarationtool.pas"/>
-        <Caret Line="70" Column="3" TopLine="51"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/extractproctool.pas"/>
-        <Caret Line="95" Column="3" TopLine="76"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/codecompletiontool.pas"/>
-        <Caret Line="149" Column="3" TopLine="142"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/methodjumptool.pas"/>
-        <Caret Line="55" Column="3" TopLine="36"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/stdcodetools.pas"/>
-        <Caret Line="85" Column="41" TopLine="57"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/identcompletiontool.pas"/>
-        <Caret Line="386" Column="62" TopLine="373"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/identcompletiontool.pas"/>
-        <Caret Line="62" Column="18" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="../../../../../fpcupdeluxe/lazarus/components/codetools/identcompletiontool.pas"/>
-        <Caret Line="389" Column="39" TopLine="373"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="151" Column="34" TopLine="128"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="41" Column="7" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="83" Column="12" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="84" Column="47" TopLine="55"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="76" Column="5" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="85" Column="13" TopLine="57"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="9" Column="54"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="173" Column="75" TopLine="151"/>
-      </Position>
-      <Position>
-        <Filename Value="pasunitmerge.pas"/>
-        <Caret Line="63" Column="12" TopLine="43"/>
+        <Caret Line="64" Column="12" TopLine="32"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -334,7 +231,7 @@
       <Modes ActiveMode="default">
         <Mode Name="default">
           <local>
-            <CommandLineParams Value="../p3d-streamable/p3d.streamable/p3d.streamable.base.pas ../p3d-streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../p3d-streamable/p3d.streamable/p3d.streamable.lists.pas ../p3d-streamable/p3d.streamable/p3d.streamable.storage.pas -o ../p3d-streamable/p3d.streamable.test.pas"/>
+            <CommandLineParams Value="tests/Unit1.pas tests/Unit2.pas -o TestUnit.pas"/>
           </local>
         </Mode>
       </Modes>
@@ -342,16 +239,13 @@
     <HistoryLists>
       <List Name="WorkingDirectory" Type="File" Count="1"/>
       <List Name="LaunchingApplication" Type="File" Count="3">
-        <Item1 Value="/usr/bin/xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
         <Item2 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
         <Item3 Value="/usr/bin/konsole -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </List>
-      <List Name="CommandLineParameters" Count="5">
-        <Item1 Value="../p3d-streamable/p3d.streamable/p3d.streamable.base.pas ../p3d-streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../p3d-streamable/p3d.streamable/p3d.streamable.lists.pas ../p3d-streamable/p3d.streamable/p3d.streamable.storage.pas -o ../p3d-streamable/p3d.streamable.test.pas"/>
-        <Item2 Value="../p3d-streamable/p3d.streamable/p3d.streamable.base.pas ../p3d-streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../p3d-streamable/p3d.streamable/p3d.streamable.lists.pas ../streamable/p3d.streamable/p3d.streamable.storage.pas -o ../p3d-streamable/p3d.streamable.test.pas"/>
-        <Item3 Value="tests/Unit1.pas tests/Unit2.pas -o TestUnit.pas"/>
-        <Item4 Value="../streamable/p3d.streamable/p3d.streamable.base.pas ../streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../streamable/p3d.streamable/p3d.streamable.lists.pas ../streamable/p3d.streamable/p3d.streamable.storage.pas -o ../streamable/p3d.streamable.test.pas"/>
-        <Item5 Value="../streamable/p3d.streamable/p3d.streamable.base.pas ../streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../streamable/p3d.streamable/p3d.streamable.lib.inc ../streamable/p3d.streamable/p3d.streamable.lists.pas ../streamable/p3d.streamable/p3d.streamable.storage.pas -o ../streamable/p3d.streamable.test.pas"/>
+      <List Name="CommandLineParameters" Count="4">
+        <Item1 Value="tests/Unit1.pas tests/Unit2.pas -o TestUnit.pas"/>
+        <Item2 Value="../streamable/p3d.streamable/p3d.streamable.base.pas ../streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../streamable/p3d.streamable/p3d.streamable.lists.pas ../streamable/p3d.streamable/p3d.streamable.storage.pas -o ../streamable/p3d.streamable.test.pas"/>
+        <Item3 Value="../streamable/p3d.streamable/p3d.streamable.base.pas ../streamable/p3d.streamable/p3d.streamable.jsonroot.pas ../streamable/p3d.streamable/p3d.streamable.lib.inc ../streamable/p3d.streamable/p3d.streamable.lists.pas ../streamable/p3d.streamable/p3d.streamable.storage.pas -o ../streamable/p3d.streamable.test.pas"/>
       </List>
     </HistoryLists>
   </ProjectSession>
