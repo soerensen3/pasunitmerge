@@ -62,3 +62,8 @@ Sorry, the example is not very good for now because you could do it without forw
 
        
     
+## Usage:
+
+call 
+
+    pasunitmerge MyUnit.Testclass.pas MyUnit.TestBaseClass.pas -o MyUnit.pas [More Units -o Outfile]
