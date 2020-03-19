@@ -66,8 +66,8 @@ var
 
     Tool.CleanPosToCodePos( StartNode.EndPos, CodeEnd );
     SrcCode:= Copy( AUnit.Source, CodeStart.P, CodeEnd.P - CodeStart.P );
-    RemoveLeadingchars( SrcCode, [ ' ', LineEnding ]);
-    RemoveTrailingChars( SrcCode, [ ' ', LineEnding ]);
+    RemoveLeadingchars( SrcCode, [ ' ', #13, #10 ]);
+    RemoveTrailingChars( SrcCode, [ ' ', #13, #10 ]);
     OutList.Add(
       '// ' + UnitName + ' -->' + LineEnding +
       SrcCode + LineEnding +
@@ -136,7 +136,15 @@ begin
     OutImpl.Text +
     'end.'
   );
+end;
 
+procedure Reset;
+begin
+  UsesImpl.Clear;
+  UsesIntf.Clear;
+  OutUnit.Clear;
+  OutIntf.Clear;
+  OutImpl.Clear;
 end;
 
 procedure TPasUnitMerge.DoRun;
@@ -174,23 +182,18 @@ begin
   i:= 1;
   while i <= ParamCount do begin
     if ( Params[ i ] = '-o' ) then begin
-      WriteLn( 'Outfile: ', Params[ i + 1 ]);
-
       FilterUsesSection( UsesIntf );
       FilterUsesSection( UsesImpl );
       GenOutFile( Params[ i + 1 ]);
 
       OutUnit.SaveToFile( Params[ i + 1 ]);
 
+      Reset;
       Inc( i );
     end else
       ParseUnit( Params[ i ]);
-      //WriteLn( 'Param ', i, ': ', Params[ i ]);
     Inc( i );
   end;
-
-
-
 
   // stop program loop
   FreeAndNil( UnitNames );
